@@ -1,0 +1,913 @@
+2026-03-31 16:06:03  INFO      test:19  Logging test: INFO level works
+2026-03-31 16:06:03  DEBUG     test:20  Logging test: DEBUG level works
+2026-03-31 17:29:17  INFO      jobbot.scraper:553  Starting scrape: google — query='Software Engineer' location='United States'
+2026-03-31 17:29:53  ERROR     jobbot.scraper:472  Google Jobs scraper error: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    14 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="logo">…</div> from <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+Traceback (most recent call last):
+  File "E:\Projects\job\agents\scraper.py", line 453, in scrape
+    await first_card.click()
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\async_api\_generated.py", line 2157, in click
+    await self._impl_obj.click(
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_element_handle.py", line 143, in click
+    await self._channel.send(
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    14 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="logo">…</div> from <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-03-31 17:29:53  INFO      jobbot.scraper:575  Finished google: 0 found, 0 new
+2026-03-31 17:29:53  INFO      jobbot.scraper:553  Starting scrape: indeed — query='Software Engineer' location='United States'
+2026-03-31 17:29:57  DEBUG     jobbot.scraper:229  Indeed: extracted 'Software Developer' @ 'Cisive'
+2026-03-31 17:30:00  DEBUG     jobbot.scraper:229  Indeed: extracted 'Senior Backend Engineer' @ 'ImagineX Consulting'
+2026-03-31 17:30:04  DEBUG     jobbot.scraper:229  Indeed: extracted 'Full Stack .NET Enterprise Application Developer (Angular)' @ 'Global Information Technology'
+2026-03-31 17:30:07  DEBUG     jobbot.scraper:229  Indeed: extracted 'Java Full Stack Developer with GCP' @ 'EAPPS TECH LLC dba Magicforce'
+2026-03-31 17:30:10  DEBUG     jobbot.scraper:229  Indeed: extracted 'Full Stack .NET Application Developer' @ 'Centuria'
+2026-03-31 17:30:13  DEBUG     jobbot.scraper:229  Indeed: extracted 'Production Engineer' @ 'Core Plastech International Inc'
+2026-03-31 17:30:17  DEBUG     jobbot.scraper:229  Indeed: extracted 'Senior Software Developer' @ 'StrataTech Education Group'
+2026-03-31 17:30:20  DEBUG     jobbot.scraper:229  Indeed: extracted 'Senior Full Stack Engineer' @ 'Axle'
+2026-03-31 17:30:24  DEBUG     jobbot.scraper:229  Indeed: extracted 'Full Stack Developer' @ 'AG Millworks'
+2026-03-31 17:30:28  DEBUG     jobbot.scraper:229  Indeed: extracted 'Full Stack Developer - React / Node / AWS' @ 'BAJ Consulting LLC'
+2026-03-31 17:30:31  DEBUG     jobbot.scraper:229  Indeed: extracted 'Software Engineer' @ 'Bectran INC'
+2026-03-31 17:30:35  DEBUG     jobbot.scraper:229  Indeed: extracted 'Software Engineer' @ 'Changeis'
+2026-03-31 17:30:38  DEBUG     jobbot.scraper:229  Indeed: extracted 'Junior Backend Engineer' @ 'TTI, Inc'
+2026-03-31 17:30:42  DEBUG     jobbot.scraper:229  Indeed: extracted 'Software Engineer' @ 'Optum'
+2026-03-31 17:30:45  DEBUG     jobbot.scraper:229  Indeed: extracted 'Full Stack Engineer (Java / AWS / Angular)' @ 'Fustis LLC'
+2026-03-31 17:30:48  DEBUG     jobbot.scraper:229  Indeed: extracted 'Full Stack Engineer (Java / AWS / Angular)' @ 'Fustis LLC'
+2026-03-31 17:30:50  DEBUG     jobbot.scraper:229  Indeed: extracted 'Software Engineer' @ 'Optum'
+2026-03-31 17:31:00  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:02  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:04  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:04  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:06  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:08  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:08  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:10  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:12  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:12  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:14  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:16  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:16  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:18  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:20  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:20  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:22  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:24  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:25  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:27  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:29  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:29  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:31  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:33  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:33  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:35  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:37  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:37  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:39  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:41  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:41  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:43  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:45  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:45  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:47  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:49  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:49  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:51  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:53  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:53  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:55  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:57  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:57  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:31:59  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:32:01  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:32:01  DEBUG     jobbot.scraper:95  Keyword extraction attempt 1 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:32:03  DEBUG     jobbot.scraper:95  Keyword extraction attempt 2 failed: model 'qwen3' not found (status code: 404)
+2026-03-31 17:32:05  WARNING   jobbot.scraper:90  Keyword extraction failed after retries, using regex fallback: model 'qwen3' not found (status code: 404)
+2026-03-31 17:32:05  INFO      jobbot.scraper:575  Finished indeed: 17 found, 17 new
+2026-03-31 17:32:06  INFO      jobbot.scraper:590  Excel export updated
+2026-03-31 17:33:43  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 17:33:44  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model 'qwen3' not found (status code: 404)
+2026-03-31 17:33:47  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model 'qwen3' not found (status code: 404)
+2026-03-31 17:33:50  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model 'qwen3' not found (status code: 404)
+2026-03-31 17:34:48  INFO      jobbot.assessor:121  Assessing job 3: Full Stack .NET Enterprise Application Developer (Angular) @ Global Information Technology
+2026-03-31 17:34:48  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model 'qwen3' not found (status code: 404)
+2026-03-31 17:34:51  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model 'qwen3' not found (status code: 404)
+2026-03-31 17:34:54  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model 'qwen3' not found (status code: 404)
+2026-03-31 17:40:11  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 17:40:11  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model 'qwen3' not found (status code: 404)
+2026-03-31 17:40:15  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model 'qwen3' not found (status code: 404)
+2026-03-31 17:40:18  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model 'qwen3' not found (status code: 404)
+2026-03-31 17:44:58  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 17:45:07  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (13.7 GiB) than is available (3.2 GiB) (status code: 500)
+2026-03-31 17:45:17  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (13.7 GiB) than is available (7.2 GiB) (status code: 500)
+2026-03-31 17:45:27  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (13.7 GiB) than is available (7.5 GiB) (status code: 500)
+2026-03-31 17:47:17  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 17:47:18  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model 'llama3.2' not found (status code: 404)
+2026-03-31 17:47:21  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model 'llama3.2' not found (status code: 404)
+2026-03-31 17:47:24  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model 'llama3.2' not found (status code: 404)
+2026-03-31 17:49:56  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 17:49:56  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model 'kimi-2.5-cloud' not found (status code: 404)
+2026-03-31 17:49:59  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model 'kimi-2.5-cloud' not found (status code: 404)
+2026-03-31 17:50:02  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model 'kimi-2.5-cloud' not found (status code: 404)
+2026-03-31 17:51:45  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 17:52:14  WARNING   jobbot.assessor:91  LLM returned invalid JSON (attempt 1/3): Expecting value: line 1 column 1 (char 0)
+2026-03-31 17:52:41  WARNING   jobbot.assessor:91  LLM returned invalid JSON (attempt 2/3): Expecting value: line 1 column 1 (char 0)
+2026-03-31 17:52:50  INFO      jobbot.assessor:121  Assessing job 2: Senior Backend Engineer @ ImagineX Consulting
+2026-03-31 17:53:12  WARNING   jobbot.assessor:91  LLM returned invalid JSON (attempt 1/3): Expecting value: line 1 column 1 (char 0)
+2026-03-31 17:53:22  WARNING   jobbot.assessor:91  LLM returned invalid JSON (attempt 3/3): Expecting value: line 1 column 1 (char 0)
+2026-03-31 17:53:42  WARNING   jobbot.assessor:91  LLM returned invalid JSON (attempt 2/3): Expecting value: line 1 column 1 (char 0)
+2026-03-31 17:54:04  WARNING   jobbot.assessor:91  LLM returned invalid JSON (attempt 3/3): Expecting value: line 1 column 1 (char 0)
+2026-03-31 18:03:43  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 18:03:45  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (10.9 GiB) than is available (6.3 GiB) (status code: 500)
+2026-03-31 18:03:50  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (10.9 GiB) than is available (6.5 GiB) (status code: 500)
+2026-03-31 18:03:55  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (10.9 GiB) than is available (6.6 GiB) (status code: 500)
+2026-03-31 18:04:38  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 18:04:40  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (10.9 GiB) than is available (6.4 GiB) (status code: 500)
+2026-03-31 18:04:45  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (10.9 GiB) than is available (6.6 GiB) (status code: 500)
+2026-03-31 18:04:50  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (10.9 GiB) than is available (6.7 GiB) (status code: 500)
+2026-03-31 18:09:08  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 18:09:10  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (10.3 GiB) than is available (7.2 GiB) (status code: 500)
+2026-03-31 18:09:15  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (10.3 GiB) than is available (7.2 GiB) (status code: 500)
+2026-03-31 18:09:19  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (10.3 GiB) than is available (7.2 GiB) (status code: 500)
+2026-03-31 18:11:55  ERROR     jobbot.dashboard:81  Ollama not reachable at http://localhost:11434: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-03-31 18:12:49  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 18:12:50  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model 'llama3.2' not found (status code: 404)
+2026-03-31 18:12:53  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model 'llama3.2' not found (status code: 404)
+2026-03-31 18:12:56  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model 'llama3.2' not found (status code: 404)
+2026-03-31 18:30:28  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 18:30:59  INFO      jobbot.assessor:150  Assessment complete — job 1 match score: 70%
+2026-03-31 18:31:21  INFO      jobbot.composer:308  Composing resume for job 1: Software Developer @ Cisive
+2026-03-31 18:31:30  INFO      jobbot.assessor:121  Assessing job 2: Senior Backend Engineer @ ImagineX Consulting
+2026-03-31 18:32:37  DEBUG     jobbot.composer:320  Compose LLM usage — input: 2591 tokens, output: 806 tokens
+2026-03-31 18:33:13  INFO      jobbot.assessor:150  Assessment complete — job 2 match score: 70%
+2026-03-31 18:38:12  INFO      jobbot.composer:308  Composing resume for job 1: Software Developer @ Cisive
+2026-03-31 18:39:24  DEBUG     jobbot.composer:320  Compose LLM usage — input: 2591 tokens, output: 803 tokens
+2026-03-31 18:40:09  INFO      jobbot.composer:308  Composing resume for job 2: Senior Backend Engineer @ ImagineX Consulting
+2026-03-31 18:40:20  INFO      jobbot.assessor:121  Assessing job 3: Full Stack .NET Enterprise Application Developer (Angular) @ Global Information Technology
+2026-03-31 18:41:25  DEBUG     jobbot.composer:320  Compose LLM usage — input: 2571 tokens, output: 839 tokens
+2026-03-31 18:41:48  INFO      jobbot.assessor:150  Assessment complete — job 3 match score: 30%
+2026-03-31 18:42:12  INFO      jobbot.assessor:121  Assessing job 4: Java Full Stack Developer with GCP @ EAPPS TECH LLC dba Magicforce
+2026-03-31 18:42:58  INFO      jobbot.assessor:150  Assessment complete — job 4 match score: 60%
+2026-03-31 18:44:53  INFO      jobbot.composer:308  Composing resume for job 2: Senior Backend Engineer @ ImagineX Consulting
+2026-03-31 18:46:06  DEBUG     jobbot.composer:320  Compose LLM usage — input: 2571 tokens, output: 828 tokens
+2026-03-31 18:50:53  INFO      jobbot.assessor:121  Assessing job 2: Senior Backend Engineer @ ImagineX Consulting
+2026-03-31 18:51:25  INFO      jobbot.assessor:150  Assessment complete — job 2 match score: 70%
+2026-03-31 18:52:23  INFO      jobbot.composer:308  Composing resume for job 4: Java Full Stack Developer with GCP @ EAPPS TECH LLC dba Magicforce
+2026-03-31 18:53:30  DEBUG     jobbot.composer:320  Compose LLM usage — input: 2825 tokens, output: 749 tokens
+2026-03-31 19:05:21  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 19:05:22  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (14.2 GiB) (status code: 500)
+2026-03-31 19:05:27  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (14.1 GiB) (status code: 500)
+2026-03-31 19:05:32  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (14.1 GiB) (status code: 500)
+2026-03-31 19:06:23  INFO      jobbot.assessor:121  Assessing job 17: Software Engineer @ Optum
+2026-03-31 19:06:25  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:06:29  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (14.2 GiB) (status code: 500)
+2026-03-31 19:06:34  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:06:34  ERROR     jobbot.dashboard:578  Re-assessment failed for job 17: model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:06:34  INFO      jobbot.assessor:121  Assessing job 15: Full Stack Engineer (Java / AWS / Angular) @ Fustis LLC
+2026-03-31 19:06:35  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:06:39  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:06:44  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:06:44  ERROR     jobbot.dashboard:578  Re-assessment failed for job 15: model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:06:44  INFO      jobbot.assessor:121  Assessing job 16: Full Stack Engineer (Java / AWS / Angular) @ Fustis LLC
+2026-03-31 19:06:45  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:06:50  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:06:54  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (14.4 GiB) (status code: 500)
+2026-03-31 19:06:54  ERROR     jobbot.dashboard:578  Re-assessment failed for job 16: model requires more system memory (15.9 GiB) than is available (14.4 GiB) (status code: 500)
+2026-03-31 19:06:54  INFO      jobbot.assessor:121  Assessing job 14: Software Engineer @ Optum
+2026-03-31 19:06:55  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (14.4 GiB) (status code: 500)
+2026-03-31 19:07:00  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:07:04  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (14.4 GiB) (status code: 500)
+2026-03-31 19:07:04  ERROR     jobbot.dashboard:578  Re-assessment failed for job 14: model requires more system memory (15.9 GiB) than is available (14.4 GiB) (status code: 500)
+2026-03-31 19:07:04  INFO      jobbot.assessor:121  Assessing job 13: Junior Backend Engineer @ TTI, Inc
+2026-03-31 19:07:06  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (14.4 GiB) (status code: 500)
+2026-03-31 19:07:10  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:07:15  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (14.4 GiB) (status code: 500)
+2026-03-31 19:07:15  ERROR     jobbot.dashboard:578  Re-assessment failed for job 13: model requires more system memory (15.9 GiB) than is available (14.4 GiB) (status code: 500)
+2026-03-31 19:07:15  INFO      jobbot.assessor:121  Assessing job 12: Software Engineer @ Changeis
+2026-03-31 19:07:16  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (14.4 GiB) (status code: 500)
+2026-03-31 19:07:21  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (14.5 GiB) (status code: 500)
+2026-03-31 19:07:25  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (14.6 GiB) (status code: 500)
+2026-03-31 19:07:25  ERROR     jobbot.dashboard:578  Re-assessment failed for job 12: model requires more system memory (15.9 GiB) than is available (14.6 GiB) (status code: 500)
+2026-03-31 19:07:25  INFO      jobbot.assessor:121  Assessing job 11: Software Engineer @ Bectran INC
+2026-03-31 19:07:27  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (14.5 GiB) (status code: 500)
+2026-03-31 19:07:31  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (14.6 GiB) (status code: 500)
+2026-03-31 19:07:36  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (14.5 GiB) (status code: 500)
+2026-03-31 19:07:36  ERROR     jobbot.dashboard:578  Re-assessment failed for job 11: model requires more system memory (15.9 GiB) than is available (14.5 GiB) (status code: 500)
+2026-03-31 19:07:36  INFO      jobbot.assessor:121  Assessing job 10: Full Stack Developer - React / Node / AWS @ BAJ Consulting LLC
+2026-03-31 19:07:37  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:07:41  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (14.3 GiB) (status code: 500)
+2026-03-31 19:07:46  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.8 GiB) (status code: 500)
+2026-03-31 19:07:46  ERROR     jobbot.dashboard:578  Re-assessment failed for job 10: model requires more system memory (15.9 GiB) than is available (13.8 GiB) (status code: 500)
+2026-03-31 19:07:46  INFO      jobbot.assessor:121  Assessing job 9: Full Stack Developer @ AG Millworks
+2026-03-31 19:07:47  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.6 GiB) (status code: 500)
+2026-03-31 19:07:52  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.6 GiB) (status code: 500)
+2026-03-31 19:07:56  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.8 GiB) (status code: 500)
+2026-03-31 19:07:56  ERROR     jobbot.dashboard:578  Re-assessment failed for job 9: model requires more system memory (15.9 GiB) than is available (13.8 GiB) (status code: 500)
+2026-03-31 19:07:56  INFO      jobbot.assessor:121  Assessing job 8: Senior Full Stack Engineer @ Axle
+2026-03-31 19:07:58  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.7 GiB) (status code: 500)
+2026-03-31 19:08:02  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.8 GiB) (status code: 500)
+2026-03-31 19:08:07  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.6 GiB) (status code: 500)
+2026-03-31 19:08:07  ERROR     jobbot.dashboard:578  Re-assessment failed for job 8: model requires more system memory (15.9 GiB) than is available (13.6 GiB) (status code: 500)
+2026-03-31 19:08:45  INFO      jobbot.assessor:121  Assessing job 17: Software Engineer @ Optum
+2026-03-31 19:09:35  INFO      jobbot.assessor:150  Assessment complete — job 17 match score: 60%
+2026-03-31 19:09:35  INFO      jobbot.assessor:121  Assessing job 15: Full Stack Engineer (Java / AWS / Angular) @ Fustis LLC
+2026-03-31 19:09:59  INFO      jobbot.assessor:150  Assessment complete — job 15 match score: 70%
+2026-03-31 19:09:59  INFO      jobbot.assessor:121  Assessing job 16: Full Stack Engineer (Java / AWS / Angular) @ Fustis LLC
+2026-03-31 19:10:24  INFO      jobbot.assessor:150  Assessment complete — job 16 match score: 70%
+2026-03-31 19:10:24  INFO      jobbot.assessor:121  Assessing job 14: Software Engineer @ Optum
+2026-03-31 19:11:01  INFO      jobbot.assessor:150  Assessment complete — job 14 match score: 60%
+2026-03-31 19:11:01  INFO      jobbot.assessor:121  Assessing job 13: Junior Backend Engineer @ TTI, Inc
+2026-03-31 19:11:28  INFO      jobbot.assessor:150  Assessment complete — job 13 match score: 70%
+2026-03-31 19:11:28  INFO      jobbot.assessor:121  Assessing job 12: Software Engineer @ Changeis
+2026-03-31 19:11:54  INFO      jobbot.assessor:150  Assessment complete — job 12 match score: 68%
+2026-03-31 19:11:54  INFO      jobbot.assessor:121  Assessing job 11: Software Engineer @ Bectran INC
+2026-03-31 19:12:34  INFO      jobbot.assessor:150  Assessment complete — job 11 match score: 60%
+2026-03-31 19:12:34  INFO      jobbot.assessor:121  Assessing job 10: Full Stack Developer - React / Node / AWS @ BAJ Consulting LLC
+2026-03-31 19:12:45  INFO      jobbot.scraper:553  Starting scrape: google — query='Software Engineer' location='United States'
+2026-03-31 19:13:03  INFO      jobbot.assessor:150  Assessment complete — job 10 match score: 60%
+2026-03-31 19:13:03  INFO      jobbot.assessor:121  Assessing job 9: Full Stack Developer @ AG Millworks
+2026-03-31 19:13:19  ERROR     jobbot.scraper:472  Google Jobs scraper error: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    12 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="logo">…</div> from <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="logo">…</div> from <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is not stable
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="logo">…</div> from <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is not stable
+  - retrying click action
+    - waiting 500ms
+Traceback (most recent call last):
+  File "E:\Projects\job\agents\scraper.py", line 453, in scrape
+    await first_card.click()
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\async_api\_generated.py", line 2157, in click
+    await self._impl_obj.click(
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_element_handle.py", line 143, in click
+    await self._channel.send(
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    12 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="logo">…</div> from <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div id="searchform" class="CvDJxb YNk70c">…</div> from <span data-h="72" data-mode="6" class="LoygGf" data-cls="VHFyob" jscontroller="Zby8rf" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="logo">…</div> from <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is not stable
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="logo">…</div> from <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <span data-h="72" data-mode="6" data-cls="VHFyob" jscontroller="Zby8rf" class="LoygGf VHFyob" jsaction="rcuQ6b:npT2md;MDuPYe:pcqARd">…</span> intercepts pointer events
+  2 × retrying click action
+      - waiting 500ms
+      - waiting for element to be visible, enabled and stable
+      - element is not stable
+  - retrying click action
+    - waiting 500ms
+
+2026-03-31 19:13:20  INFO      jobbot.scraper:575  Finished google: 0 found, 0 new
+2026-03-31 19:13:20  INFO      jobbot.scraper:553  Starting scrape: indeed — query='Software Engineer' location='United States'
+2026-03-31 19:13:26  DEBUG     jobbot.scraper:229  Indeed: extracted 'Software Developer' @ 'Cisive'
+2026-03-31 19:13:30  DEBUG     jobbot.scraper:229  Indeed: extracted 'Senior Backend Engineer' @ 'ImagineX Consulting'
+2026-03-31 19:13:33  DEBUG     jobbot.scraper:229  Indeed: extracted 'Java Full Stack Developer with GCP' @ 'EAPPS TECH LLC dba Magicforce'
+2026-03-31 19:13:36  DEBUG     jobbot.scraper:229  Indeed: extracted 'Senior Full Stack Engineer' @ 'Axle'
+2026-03-31 19:13:40  DEBUG     jobbot.scraper:229  Indeed: extracted 'Full Stack Developer' @ 'AG Millworks'
+2026-03-31 19:13:42  INFO      jobbot.assessor:150  Assessment complete — job 9 match score: 20%
+2026-03-31 19:13:42  INFO      jobbot.assessor:121  Assessing job 8: Senior Full Stack Engineer @ Axle
+2026-03-31 19:13:42  DEBUG     jobbot.scraper:229  Indeed: extracted 'Software Engineer' @ 'Bectran INC'
+2026-03-31 19:13:46  DEBUG     jobbot.scraper:229  Indeed: extracted 'Software Engineer II' @ 'American Homes 4 Rent, L.P.'
+2026-03-31 19:13:49  DEBUG     jobbot.scraper:229  Indeed: extracted 'Full Stack Engineer' @ 'Intrinsic'
+2026-03-31 19:13:55  DEBUG     jobbot.scraper:229  Indeed: extracted 'Software Engineer' @ 'Changeis'
+2026-03-31 19:13:58  DEBUG     jobbot.scraper:229  Indeed: extracted 'Software Engineer' @ 'Changeis'
+2026-03-31 19:14:01  DEBUG     jobbot.scraper:229  Indeed: extracted 'Junior Backend Engineer' @ 'TTI, Inc'
+2026-03-31 19:14:04  DEBUG     jobbot.scraper:229  Indeed: extracted 'Software Engineer' @ 'Optum'
+2026-03-31 19:14:08  DEBUG     jobbot.scraper:229  Indeed: extracted 'Full Stack Engineer (Java / AWS / Angular)' @ 'Fustis LLC'
+2026-03-31 19:14:11  DEBUG     jobbot.scraper:229  Indeed: extracted 'Full Stack Developer' @ 'Cloud and Things, Inc'
+2026-03-31 19:14:15  DEBUG     jobbot.scraper:229  Indeed: extracted 'Software Engineer' @ 'Optum'
+2026-03-31 19:14:19  DEBUG     jobbot.scraper:229  Indeed: extracted 'Backend Developer' @ 'Trinity Global Consulting'
+2026-03-31 19:14:30  INFO      jobbot.assessor:150  Assessment complete — job 8 match score: 60%
+2026-03-31 19:14:30  INFO      jobbot.assessor:121  Assessing job 7: Senior Software Developer @ StrataTech Education Group
+2026-03-31 19:15:07  INFO      jobbot.assessor:150  Assessment complete — job 7 match score: 60%
+2026-03-31 19:15:07  INFO      jobbot.assessor:121  Assessing job 6: Production Engineer @ Core Plastech International Inc
+2026-03-31 19:15:38  INFO      jobbot.assessor:150  Assessment complete — job 6 match score: 0%
+2026-03-31 19:15:38  INFO      jobbot.assessor:121  Assessing job 5: Full Stack .NET Application Developer @ Centuria
+2026-03-31 19:16:31  INFO      jobbot.assessor:150  Assessment complete — job 5 match score: 20%
+2026-03-31 19:16:31  INFO      jobbot.assessor:121  Assessing job 4: Java Full Stack Developer with GCP @ EAPPS TECH LLC dba Magicforce
+2026-03-31 19:17:18  INFO      jobbot.assessor:150  Assessment complete — job 4 match score: 60%
+2026-03-31 19:17:18  INFO      jobbot.assessor:121  Assessing job 3: Full Stack .NET Enterprise Application Developer (Angular) @ Global Information Technology
+2026-03-31 19:17:49  INFO      jobbot.assessor:150  Assessment complete — job 3 match score: 40%
+2026-03-31 19:17:49  INFO      jobbot.assessor:121  Assessing job 2: Senior Backend Engineer @ ImagineX Consulting
+2026-03-31 19:18:27  INFO      jobbot.assessor:150  Assessment complete — job 2 match score: 60%
+2026-03-31 19:18:27  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 19:19:14  INFO      jobbot.assessor:150  Assessment complete — job 1 match score: 60%
+2026-03-31 19:20:18  INFO      jobbot.scraper:575  Finished indeed: 16 found, 16 new
+2026-03-31 19:20:18  INFO      jobbot.scraper:553  Starting scrape: linkedin — query='Software Engineer' location='United States'
+2026-03-31 19:20:54  ERROR     jobbot.scraper:157  LinkedIn scraper error: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+Traceback (most recent call last):
+  File "E:\Projects\job\agents\scraper.py", line 115, in scrape
+    await self._login(page)
+  File "E:\Projects\job\agents\scraper.py", line 167, in _login
+    await page.wait_for_load_state("networkidle", timeout=30000)
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\async_api\_generated.py", line 9141, in wait_for_load_state
+    await self._impl_obj.wait_for_load_state(state=state, timeout=timeout)
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_page.py", line 572, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_frame.py", line 273, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_frame.py", line 301, in _wait_for_load_state_impl
+    await waiter.result()
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+2026-03-31 19:20:54  INFO      jobbot.scraper:575  Finished linkedin: 0 found, 0 new
+2026-03-31 19:20:54  INFO      jobbot.scraper:553  Starting scrape: glassdoor — query='Software Engineer' location='United States'
+2026-03-31 19:21:01  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:04  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:07  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:10  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:13  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:16  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:20  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:23  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:26  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:29  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:34  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:39  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:44  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:48  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:54  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:21:58  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:03  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:08  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:13  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:18  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:20  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:24  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:27  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:30  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:33  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:36  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:39  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:42  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:46  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:22:49  DEBUG     jobbot.scraper:305  Glassdoor: extracted 'IBM AS400/RPG Programmer' @ 'None'
+2026-03-31 19:27:16  INFO      jobbot.scraper:575  Finished glassdoor: 30 found, 30 new
+2026-03-31 19:27:16  INFO      jobbot.scraper:553  Starting scrape: wellfound — query='Software Engineer' location='United States'
+2026-03-31 19:27:34  INFO      jobbot.scraper:575  Finished wellfound: 0 found, 0 new
+2026-03-31 19:27:35  INFO      jobbot.scraper:590  Excel export updated
+2026-03-31 19:44:57  INFO      jobbot.scraper:553  Starting scrape: linkedin — query='Software Engineer' location='United States'
+2026-03-31 19:45:36  ERROR     jobbot.scraper:157  LinkedIn scraper error: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+Traceback (most recent call last):
+  File "E:\Projects\job\agents\scraper.py", line 115, in scrape
+  File "E:\Projects\job\agents\scraper.py", line 167, in _login
+    break
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\async_api\_generated.py", line 9141, in wait_for_load_state
+    await self._impl_obj.wait_for_load_state(state=state, timeout=timeout)
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_page.py", line 572, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_frame.py", line 273, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_frame.py", line 301, in _wait_for_load_state_impl
+    await waiter.result()
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+2026-03-31 19:45:37  INFO      jobbot.scraper:575  Finished linkedin: 0 found, 0 new
+2026-03-31 19:45:37  INFO      jobbot.scraper:590  Excel export updated
+2026-03-31 19:46:33  INFO      jobbot.scraper:553  Starting scrape: linkedin — query='Software Engineer' location='United States'
+2026-03-31 19:47:15  ERROR     jobbot.scraper:157  LinkedIn scraper error: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+Traceback (most recent call last):
+  File "E:\Projects\job\agents\scraper.py", line 115, in scrape
+  File "E:\Projects\job\agents\scraper.py", line 167, in _login
+    break
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\async_api\_generated.py", line 9141, in wait_for_load_state
+    await self._impl_obj.wait_for_load_state(state=state, timeout=timeout)
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_page.py", line 572, in wait_for_load_state
+    return await self._main_frame.wait_for_load_state(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_frame.py", line 273, in wait_for_load_state
+    return await self._wait_for_load_state_impl(state, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_frame.py", line 301, in _wait_for_load_state_impl
+    await waiter.result()
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"domcontentloaded" event fired
+"load" event fired
+============================================================
+2026-03-31 19:47:15  INFO      jobbot.scraper:575  Finished linkedin: 0 found, 0 new
+2026-03-31 19:47:16  INFO      jobbot.scraper:590  Excel export updated
+2026-03-31 19:48:33  INFO      jobbot.scraper:593  Starting scrape: linkedin — query='Software Engineer' location='United States'
+2026-03-31 19:48:33  DEBUG     jobbot.scraper:138  LinkedIn/RapidAPI: fetching page 1 for 'Software Engineer' in 'United States'
+2026-03-31 19:48:37  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Software Engineer' @ 'UnitedHealth Group'
+2026-03-31 19:48:37  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Entry Level - Software Engineering or Computer Science' @ 'The MITRE Corporation'
+2026-03-31 19:48:37  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Software Engineer II – Agentic AI Engineer' @ 'Citizens Bank, N.A.'
+2026-03-31 19:48:37  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Front End Software Engineer - Senior Level' @ 'Walmart'
+2026-03-31 19:48:37  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Senior Software Quality Engineer' @ 'Mastercard'
+2026-03-31 19:48:37  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'CNO Software Engineer / Developer' @ 'Lockheed Martin'
+2026-03-31 19:48:37  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Lead Software Engineer' @ 'Disney Experiences'
+2026-03-31 19:48:37  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted '2026008 - Senior Software Engineer' @ 'John Deere'
+2026-03-31 19:48:37  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Senior Software Engineer, AI Core' @ 'Chainalysis'
+2026-03-31 19:48:37  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Senior Software Engineer (Network Routing/Switching & AI Fabric)' @ 'Cisco'
+2026-03-31 19:48:38  DEBUG     jobbot.scraper:138  LinkedIn/RapidAPI: fetching page 2 for 'Software Engineer' in 'United States'
+2026-03-31 19:48:47  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Software Engineer' @ 'Siemens'
+2026-03-31 19:48:47  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Software Engineer Principal - Mainframe/Cobol' @ 'PNC'
+2026-03-31 19:48:47  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Senior Software Engineer' @ 'UnitedHealth Group'
+2026-03-31 19:48:47  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Java, Javascript, Python, NodeJS Software Engineer' @ 'Walmart'
+2026-03-31 19:48:47  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Senior C# Software Engineer – Test Systems' @ 'RTX'
+2026-03-31 19:48:47  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Software Engineer - Staff' @ 'Lockheed Martin'
+2026-03-31 19:48:47  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Sr Software / Principal Software Engineer (Cloud Native NMS)' @ 'Palo Alto Networks, Inc.'
+2026-03-31 19:48:47  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted 'Software Engineer I (AWS) | Hartford, CT, USA' @ 'The Travelers Indemnity Company'
+2026-03-31 19:48:47  DEBUG     jobbot.scraper:172  LinkedIn/RapidAPI: extracted '.NET Sr Software Engineer (U.S. Remote - Occasional Office Visits Required)' @ 'Unison Software, Inc.'
+2026-03-31 19:48:48  INFO      jobbot.scraper:178  LinkedIn/RapidAPI: fetched 19 jobs
+2026-03-31 19:48:50  DEBUG     jobbot.scraper:96  Keyword extraction attempt 1 failed: model requires more system memory (10.3 GiB) than is available (10.1 GiB) (status code: 500)
+2026-03-31 19:48:53  DEBUG     jobbot.scraper:96  Keyword extraction attempt 2 failed: model requires more system memory (10.3 GiB) than is available (10.1 GiB) (status code: 500)
+2026-03-31 19:48:57  WARNING   jobbot.scraper:91  Keyword extraction failed after retries, using regex fallback: model requires more system memory (10.3 GiB) than is available (10.1 GiB) (status code: 500)
+2026-03-31 19:48:58  DEBUG     jobbot.scraper:96  Keyword extraction attempt 1 failed: model requires more system memory (10.3 GiB) than is available (10.1 GiB) (status code: 500)
+2026-03-31 19:49:01  DEBUG     jobbot.scraper:96  Keyword extraction attempt 2 failed: model requires more system memory (10.3 GiB) than is available (10.0 GiB) (status code: 500)
+2026-03-31 19:49:05  WARNING   jobbot.scraper:91  Keyword extraction failed after retries, using regex fallback: model requires more system memory (10.3 GiB) than is available (10.1 GiB) (status code: 500)
+2026-03-31 19:49:06  DEBUG     jobbot.scraper:96  Keyword extraction attempt 1 failed: model requires more system memory (10.3 GiB) than is available (10.1 GiB) (status code: 500)
+2026-03-31 19:49:10  DEBUG     jobbot.scraper:96  Keyword extraction attempt 2 failed: model requires more system memory (10.3 GiB) than is available (10.1 GiB) (status code: 500)
+2026-03-31 19:49:13  WARNING   jobbot.scraper:91  Keyword extraction failed after retries, using regex fallback: model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:49:14  DEBUG     jobbot.scraper:96  Keyword extraction attempt 1 failed: model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:49:18  DEBUG     jobbot.scraper:96  Keyword extraction attempt 2 failed: model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:49:21  WARNING   jobbot.scraper:91  Keyword extraction failed after retries, using regex fallback: model requires more system memory (15.9 GiB) than is available (13.8 GiB) (status code: 500)
+2026-03-31 19:49:22  DEBUG     jobbot.scraper:96  Keyword extraction attempt 1 failed: model requires more system memory (15.9 GiB) than is available (13.9 GiB) (status code: 500)
+2026-03-31 19:49:26  DEBUG     jobbot.scraper:96  Keyword extraction attempt 2 failed: model requires more system memory (15.9 GiB) than is available (13.9 GiB) (status code: 500)
+2026-03-31 19:49:30  WARNING   jobbot.scraper:91  Keyword extraction failed after retries, using regex fallback: model requires more system memory (15.9 GiB) than is available (13.8 GiB) (status code: 500)
+2026-03-31 19:49:31  DEBUG     jobbot.scraper:96  Keyword extraction attempt 1 failed: model requires more system memory (15.9 GiB) than is available (13.6 GiB) (status code: 500)
+2026-03-31 19:49:35  DEBUG     jobbot.scraper:96  Keyword extraction attempt 2 failed: model requires more system memory (15.9 GiB) than is available (13.9 GiB) (status code: 500)
+2026-03-31 19:49:38  WARNING   jobbot.scraper:91  Keyword extraction failed after retries, using regex fallback: model requires more system memory (15.9 GiB) than is available (13.8 GiB) (status code: 500)
+2026-03-31 19:49:39  DEBUG     jobbot.scraper:96  Keyword extraction attempt 1 failed: model requires more system memory (15.9 GiB) than is available (13.9 GiB) (status code: 500)
+2026-03-31 19:49:43  DEBUG     jobbot.scraper:96  Keyword extraction attempt 2 failed: model requires more system memory (15.9 GiB) than is available (13.9 GiB) (status code: 500)
+2026-03-31 19:49:46  WARNING   jobbot.scraper:91  Keyword extraction failed after retries, using regex fallback: model requires more system memory (15.9 GiB) than is available (13.9 GiB) (status code: 500)
+2026-03-31 19:49:47  DEBUG     jobbot.scraper:96  Keyword extraction attempt 1 failed: model requires more system memory (15.9 GiB) than is available (14.0 GiB) (status code: 500)
+2026-03-31 19:49:51  DEBUG     jobbot.scraper:96  Keyword extraction attempt 2 failed: model requires more system memory (15.9 GiB) than is available (13.9 GiB) (status code: 500)
+2026-03-31 19:49:54  WARNING   jobbot.scraper:91  Keyword extraction failed after retries, using regex fallback: model requires more system memory (15.9 GiB) than is available (13.9 GiB) (status code: 500)
+2026-03-31 19:49:55  DEBUG     jobbot.scraper:96  Keyword extraction attempt 1 failed: model requires more system memory (15.9 GiB) than is available (13.9 GiB) (status code: 500)
+2026-03-31 19:49:59  DEBUG     jobbot.scraper:96  Keyword extraction attempt 2 failed: model requires more system memory (15.9 GiB) than is available (14.0 GiB) (status code: 500)
+2026-03-31 19:50:02  WARNING   jobbot.scraper:91  Keyword extraction failed after retries, using regex fallback: model requires more system memory (15.9 GiB) than is available (13.9 GiB) (status code: 500)
+2026-03-31 19:50:03  DEBUG     jobbot.scraper:96  Keyword extraction attempt 1 failed: model requires more system memory (15.9 GiB) than is available (13.9 GiB) (status code: 500)
+2026-03-31 19:50:07  DEBUG     jobbot.scraper:96  Keyword extraction attempt 2 failed: model requires more system memory (15.9 GiB) than is available (14.0 GiB) (status code: 500)
+2026-03-31 19:51:13  INFO      jobbot.assessor:121  Assessing job 72: Senior Software Engineer, AI Core @ Chainalysis
+2026-03-31 19:51:15  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.0 GiB) (status code: 500)
+2026-03-31 19:51:19  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.1 GiB) (status code: 500)
+2026-03-31 19:51:24  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:51:24  ERROR     jobbot.dashboard:578  Re-assessment failed for job 72: model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:51:24  INFO      jobbot.assessor:121  Assessing job 71: 2026008 - Senior Software Engineer @ John Deere
+2026-03-31 19:51:25  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:51:30  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.3 GiB) (status code: 500)
+2026-03-31 19:51:34  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:51:34  ERROR     jobbot.dashboard:578  Re-assessment failed for job 71: model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:51:34  INFO      jobbot.assessor:121  Assessing job 70: Lead Software Engineer @ Disney Experiences
+2026-03-31 19:51:35  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:51:40  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:51:44  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:51:44  ERROR     jobbot.dashboard:578  Re-assessment failed for job 70: model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:51:44  INFO      jobbot.assessor:121  Assessing job 69: CNO Software Engineer / Developer @ Lockheed Martin
+2026-03-31 19:51:46  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.3 GiB) (status code: 500)
+2026-03-31 19:51:50  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.3 GiB) (status code: 500)
+2026-03-31 19:51:55  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.3 GiB) (status code: 500)
+2026-03-31 19:51:55  ERROR     jobbot.dashboard:578  Re-assessment failed for job 69: model requires more system memory (15.9 GiB) than is available (13.3 GiB) (status code: 500)
+2026-03-31 19:51:55  INFO      jobbot.assessor:121  Assessing job 68: Senior Software Quality Engineer @ Mastercard
+2026-03-31 19:51:56  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:52:00  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:52:05  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.5 GiB) (status code: 500)
+2026-03-31 19:52:05  ERROR     jobbot.dashboard:578  Re-assessment failed for job 68: model requires more system memory (15.9 GiB) than is available (13.5 GiB) (status code: 500)
+2026-03-31 19:52:05  INFO      jobbot.assessor:121  Assessing job 67: Front End Software Engineer - Senior Level @ Walmart
+2026-03-31 19:52:06  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.5 GiB) (status code: 500)
+2026-03-31 19:52:10  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.5 GiB) (status code: 500)
+2026-03-31 19:52:15  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.5 GiB) (status code: 500)
+2026-03-31 19:52:15  ERROR     jobbot.dashboard:578  Re-assessment failed for job 67: model requires more system memory (15.9 GiB) than is available (13.5 GiB) (status code: 500)
+2026-03-31 19:52:15  INFO      jobbot.assessor:121  Assessing job 66: Software Engineer II – Agentic AI Engineer @ Citizens Bank, N.A.
+2026-03-31 19:52:16  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.5 GiB) (status code: 500)
+2026-03-31 19:52:21  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.5 GiB) (status code: 500)
+2026-03-31 19:52:25  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.6 GiB) (status code: 500)
+2026-03-31 19:52:25  ERROR     jobbot.dashboard:578  Re-assessment failed for job 66: model requires more system memory (15.9 GiB) than is available (13.6 GiB) (status code: 500)
+2026-03-31 19:52:25  INFO      jobbot.assessor:121  Assessing job 65: Entry Level - Software Engineering or Computer Science @ The MITRE Corporation
+2026-03-31 19:52:27  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:52:31  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.2 GiB) (status code: 500)
+2026-03-31 19:52:36  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.3 GiB) (status code: 500)
+2026-03-31 19:52:36  ERROR     jobbot.dashboard:578  Re-assessment failed for job 65: model requires more system memory (15.9 GiB) than is available (13.3 GiB) (status code: 500)
+2026-03-31 19:52:36  INFO      jobbot.assessor:121  Assessing job 64: Software Engineer @ UnitedHealth Group
+2026-03-31 19:52:37  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.2 GiB) (status code: 500)
+2026-03-31 19:52:42  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.2 GiB) (status code: 500)
+2026-03-31 19:52:46  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.6 GiB) (status code: 500)
+2026-03-31 19:52:46  ERROR     jobbot.dashboard:578  Re-assessment failed for job 64: model requires more system memory (15.9 GiB) than is available (13.6 GiB) (status code: 500)
+2026-03-31 19:52:47  INFO      jobbot.assessor:121  Assessing job 34: IBM AS400/RPG Programmer @ None
+2026-03-31 19:52:48  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.6 GiB) (status code: 500)
+2026-03-31 19:52:52  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.8 GiB) (status code: 500)
+2026-03-31 19:52:55  INFO      jobbot.composer:308  Composing resume for job 1: Software Developer @ Cisive
+2026-03-31 19:52:57  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.3 GiB) (status code: 500)
+2026-03-31 19:52:58  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.3 GiB) (status code: 500)
+2026-03-31 19:52:58  ERROR     jobbot.dashboard:578  Re-assessment failed for job 34: model requires more system memory (15.9 GiB) than is available (13.3 GiB) (status code: 500)
+2026-03-31 19:53:01  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.1 GiB) (status code: 500)
+2026-03-31 19:53:03  INFO      jobbot.composer:308  Composing resume for job 2: Senior Backend Engineer @ ImagineX Consulting
+2026-03-31 19:53:05  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:53:06  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:53:09  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.5 GiB) (status code: 500)
+2026-03-31 19:53:14  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.7 GiB) (status code: 500)
+2026-03-31 19:53:28  INFO      jobbot.assessor:121  Assessing job 72: Senior Software Engineer, AI Core @ Chainalysis
+2026-03-31 19:53:30  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): model requires more system memory (15.9 GiB) than is available (13.3 GiB) (status code: 500)
+2026-03-31 19:53:35  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): model requires more system memory (15.9 GiB) than is available (13.4 GiB) (status code: 500)
+2026-03-31 19:53:39  ERROR     jobbot.assessor:97  LLM call error (attempt 3/3): model requires more system memory (15.9 GiB) than is available (13.7 GiB) (status code: 500)
+2026-03-31 19:53:39  ERROR     jobbot.dashboard:578  Re-assessment failed for job 72: model requires more system memory (15.9 GiB) than is available (13.7 GiB) (status code: 500)
+2026-03-31 19:56:18  INFO      jobbot.assessor:121  Assessing job 72: Senior Software Engineer, AI Core @ Chainalysis
+2026-03-31 19:57:14  INFO      jobbot.assessor:150  Assessment complete — job 72 match score: 60%
+2026-03-31 19:57:14  INFO      jobbot.assessor:121  Assessing job 71: 2026008 - Senior Software Engineer @ John Deere
+2026-03-31 19:58:04  INFO      jobbot.assessor:150  Assessment complete — job 71 match score: 40%
+2026-03-31 19:58:04  INFO      jobbot.assessor:121  Assessing job 70: Lead Software Engineer @ Disney Experiences
+2026-03-31 19:58:39  INFO      jobbot.assessor:150  Assessment complete — job 70 match score: 60%
+2026-03-31 19:58:39  INFO      jobbot.assessor:121  Assessing job 69: CNO Software Engineer / Developer @ Lockheed Martin
+2026-03-31 19:59:11  INFO      jobbot.assessor:150  Assessment complete — job 69 match score: 60%
+2026-03-31 19:59:11  INFO      jobbot.assessor:121  Assessing job 68: Senior Software Quality Engineer @ Mastercard
+2026-03-31 19:59:58  INFO      jobbot.assessor:150  Assessment complete — job 68 match score: 60%
+2026-03-31 19:59:58  INFO      jobbot.assessor:121  Assessing job 67: Front End Software Engineer - Senior Level @ Walmart
+2026-03-31 20:00:31  INFO      jobbot.assessor:150  Assessment complete — job 67 match score: 60%
+2026-03-31 20:00:31  INFO      jobbot.assessor:121  Assessing job 66: Software Engineer II – Agentic AI Engineer @ Citizens Bank, N.A.
+2026-03-31 20:01:07  INFO      jobbot.assessor:150  Assessment complete — job 66 match score: 60%
+2026-03-31 20:01:07  INFO      jobbot.assessor:121  Assessing job 65: Entry Level - Software Engineering or Computer Science @ The MITRE Corporation
+2026-03-31 20:01:42  INFO      jobbot.assessor:150  Assessment complete — job 65 match score: 60%
+2026-03-31 20:01:42  INFO      jobbot.assessor:121  Assessing job 64: Software Engineer @ UnitedHealth Group
+2026-03-31 20:02:15  INFO      jobbot.assessor:150  Assessment complete — job 64 match score: 60%
+2026-03-31 20:02:15  INFO      jobbot.assessor:121  Assessing job 34: IBM AS400/RPG Programmer @ None
+2026-03-31 20:13:26  INFO      jobbot.assessor:150  Assessment complete — job 34 match score: 0%
+2026-03-31 20:22:38  INFO      jobbot.assessor:121  Assessing job 72: Senior Software Engineer, AI Core @ Chainalysis
+2026-03-31 20:23:42  INFO      jobbot.assessor:150  Assessment complete — job 72 match score: 72%
+2026-03-31 20:23:42  INFO      jobbot.assessor:121  Assessing job 71: 2026008 - Senior Software Engineer @ John Deere
+2026-03-31 20:24:24  INFO      jobbot.assessor:150  Assessment complete — job 71 match score: 40%
+2026-03-31 20:24:24  INFO      jobbot.assessor:121  Assessing job 70: Lead Software Engineer @ Disney Experiences
+2026-03-31 20:24:57  INFO      jobbot.assessor:150  Assessment complete — job 70 match score: 60%
+2026-03-31 20:24:57  INFO      jobbot.assessor:121  Assessing job 69: CNO Software Engineer / Developer @ Lockheed Martin
+2026-03-31 20:25:32  INFO      jobbot.assessor:150  Assessment complete — job 69 match score: 72%
+2026-03-31 20:25:32  INFO      jobbot.assessor:121  Assessing job 68: Senior Software Quality Engineer @ Mastercard
+2026-03-31 20:26:02  INFO      jobbot.assessor:150  Assessment complete — job 68 match score: 72%
+2026-03-31 20:26:02  INFO      jobbot.assessor:121  Assessing job 67: Front End Software Engineer - Senior Level @ Walmart
+2026-03-31 20:26:31  INFO      jobbot.assessor:150  Assessment complete — job 67 match score: 60%
+2026-03-31 20:26:31  INFO      jobbot.assessor:121  Assessing job 66: Software Engineer II – Agentic AI Engineer @ Citizens Bank, N.A.
+2026-03-31 20:27:07  INFO      jobbot.assessor:150  Assessment complete — job 66 match score: 60%
+2026-03-31 20:27:07  INFO      jobbot.assessor:121  Assessing job 65: Entry Level - Software Engineering or Computer Science @ The MITRE Corporation
+2026-03-31 20:27:32  INFO      jobbot.assessor:150  Assessment complete — job 65 match score: 60%
+2026-03-31 20:27:32  INFO      jobbot.assessor:121  Assessing job 64: Software Engineer @ UnitedHealth Group
+2026-03-31 20:28:12  INFO      jobbot.assessor:150  Assessment complete — job 64 match score: 60%
+2026-03-31 20:28:12  INFO      jobbot.assessor:121  Assessing job 34: IBM AS400/RPG Programmer @ None
+2026-03-31 20:28:50  INFO      jobbot.assessor:150  Assessment complete — job 34 match score: 0%
+2026-03-31 20:28:50  INFO      jobbot.assessor:121  Assessing job 33: Backend Developer @ Trinity Global Consulting
+2026-03-31 20:29:20  INFO      jobbot.assessor:150  Assessment complete — job 33 match score: 70%
+2026-03-31 20:29:20  INFO      jobbot.assessor:121  Assessing job 32: Software Engineer @ Optum
+2026-03-31 20:29:54  INFO      jobbot.assessor:150  Assessment complete — job 32 match score: 60%
+2026-03-31 20:29:54  INFO      jobbot.assessor:121  Assessing job 31: Full Stack Developer @ Cloud and Things, Inc
+2026-03-31 20:30:24  INFO      jobbot.assessor:150  Assessment complete — job 31 match score: 60%
+2026-03-31 20:30:24  INFO      jobbot.assessor:121  Assessing job 30: Full Stack Engineer (Java / AWS / Angular) @ Fustis LLC
+2026-03-31 20:30:48  INFO      jobbot.assessor:150  Assessment complete — job 30 match score: 72%
+2026-03-31 20:30:48  INFO      jobbot.assessor:121  Assessing job 29: Software Engineer @ Optum
+2026-03-31 20:31:21  INFO      jobbot.assessor:150  Assessment complete — job 29 match score: 70%
+2026-03-31 20:31:21  INFO      jobbot.assessor:121  Assessing job 28: Junior Backend Engineer @ TTI, Inc
+2026-03-31 20:31:55  INFO      jobbot.assessor:150  Assessment complete — job 28 match score: 60%
+2026-03-31 20:31:55  INFO      jobbot.assessor:121  Assessing job 26: Software Engineer @ Changeis
+2026-03-31 20:32:25  INFO      jobbot.assessor:150  Assessment complete — job 26 match score: 82%
+2026-03-31 20:32:25  INFO      jobbot.assessor:121  Assessing job 27: Software Engineer @ Changeis
+2026-03-31 20:32:42  INFO      jobbot.assessor:150  Assessment complete — job 27 match score: 82%
+2026-03-31 20:32:42  INFO      jobbot.assessor:121  Assessing job 25: Full Stack Engineer @ Intrinsic
+2026-03-31 20:33:09  INFO      jobbot.assessor:150  Assessment complete — job 25 match score: 70%
+2026-03-31 20:33:09  INFO      jobbot.assessor:121  Assessing job 24: Software Engineer II @ American Homes 4 Rent, L.P.
+2026-03-31 20:33:46  INFO      jobbot.assessor:150  Assessment complete — job 24 match score: 60%
+2026-03-31 20:33:46  INFO      jobbot.assessor:121  Assessing job 23: Software Engineer @ Bectran INC
+2026-03-31 20:34:25  INFO      jobbot.assessor:150  Assessment complete — job 23 match score: 60%
+2026-03-31 20:34:25  INFO      jobbot.assessor:121  Assessing job 22: Full Stack Developer @ AG Millworks
+2026-03-31 20:34:51  INFO      jobbot.assessor:150  Assessment complete — job 22 match score: 20%
+2026-03-31 20:34:51  INFO      jobbot.assessor:121  Assessing job 21: Senior Full Stack Engineer @ Axle
+2026-03-31 20:35:36  INFO      jobbot.assessor:150  Assessment complete — job 21 match score: 60%
+2026-03-31 20:35:36  INFO      jobbot.assessor:121  Assessing job 20: Java Full Stack Developer with GCP @ EAPPS TECH LLC dba Magicforce
+2026-03-31 20:36:01  INFO      jobbot.assessor:150  Assessment complete — job 20 match score: 60%
+2026-03-31 20:36:01  INFO      jobbot.assessor:121  Assessing job 19: Senior Backend Engineer @ ImagineX Consulting
+2026-03-31 20:36:31  INFO      jobbot.assessor:150  Assessment complete — job 19 match score: 60%
+2026-03-31 20:36:31  INFO      jobbot.assessor:121  Assessing job 18: Software Developer @ Cisive
+2026-03-31 20:36:55  INFO      jobbot.assessor:150  Assessment complete — job 18 match score: 60%
+2026-03-31 20:36:55  INFO      jobbot.assessor:121  Assessing job 17: Software Engineer @ Optum
+2026-03-31 20:37:28  INFO      jobbot.assessor:150  Assessment complete — job 17 match score: 60%
+2026-03-31 20:37:28  INFO      jobbot.assessor:121  Assessing job 15: Full Stack Engineer (Java / AWS / Angular) @ Fustis LLC
+2026-03-31 20:37:50  INFO      jobbot.assessor:150  Assessment complete — job 15 match score: 82%
+2026-03-31 20:37:50  INFO      jobbot.assessor:121  Assessing job 16: Full Stack Engineer (Java / AWS / Angular) @ Fustis LLC
+2026-03-31 20:38:11  INFO      jobbot.assessor:150  Assessment complete — job 16 match score: 72%
+2026-03-31 20:38:11  INFO      jobbot.assessor:121  Assessing job 14: Software Engineer @ Optum
+2026-03-31 20:38:42  INFO      jobbot.assessor:150  Assessment complete — job 14 match score: 60%
+2026-03-31 20:38:42  INFO      jobbot.assessor:121  Assessing job 13: Junior Backend Engineer @ TTI, Inc
+2026-03-31 20:39:05  INFO      jobbot.assessor:150  Assessment complete — job 13 match score: 60%
+2026-03-31 20:39:05  INFO      jobbot.assessor:121  Assessing job 12: Software Engineer @ Changeis
+2026-03-31 20:39:27  INFO      jobbot.assessor:150  Assessment complete — job 12 match score: 82%
+2026-03-31 20:39:27  INFO      jobbot.assessor:121  Assessing job 11: Software Engineer @ Bectran INC
+2026-03-31 20:39:58  INFO      jobbot.assessor:150  Assessment complete — job 11 match score: 60%
+2026-03-31 20:39:58  INFO      jobbot.assessor:121  Assessing job 10: Full Stack Developer - React / Node / AWS @ BAJ Consulting LLC
+2026-03-31 20:40:37  INFO      jobbot.assessor:150  Assessment complete — job 10 match score: 70%
+2026-03-31 20:40:37  INFO      jobbot.assessor:121  Assessing job 9: Full Stack Developer @ AG Millworks
+2026-03-31 20:41:13  INFO      jobbot.assessor:150  Assessment complete — job 9 match score: 20%
+2026-03-31 20:41:13  INFO      jobbot.assessor:121  Assessing job 8: Senior Full Stack Engineer @ Axle
+2026-03-31 20:41:51  INFO      jobbot.assessor:150  Assessment complete — job 8 match score: 60%
+2026-03-31 20:41:51  INFO      jobbot.assessor:121  Assessing job 7: Senior Software Developer @ StrataTech Education Group
+2026-03-31 20:42:17  INFO      jobbot.assessor:150  Assessment complete — job 7 match score: 70%
+2026-03-31 20:42:17  INFO      jobbot.assessor:121  Assessing job 6: Production Engineer @ Core Plastech International Inc
+2026-03-31 20:42:48  INFO      jobbot.assessor:150  Assessment complete — job 6 match score: 0%
+2026-03-31 20:42:48  INFO      jobbot.assessor:121  Assessing job 5: Full Stack .NET Application Developer @ Centuria
+2026-03-31 20:43:19  INFO      jobbot.assessor:150  Assessment complete — job 5 match score: 20%
+2026-03-31 20:43:19  INFO      jobbot.assessor:121  Assessing job 4: Java Full Stack Developer with GCP @ EAPPS TECH LLC dba Magicforce
+2026-03-31 20:43:53  INFO      jobbot.assessor:150  Assessment complete — job 4 match score: 70%
+2026-03-31 20:43:53  INFO      jobbot.assessor:121  Assessing job 3: Full Stack .NET Enterprise Application Developer (Angular) @ Global Information Technology
+2026-03-31 20:44:14  INFO      jobbot.assessor:150  Assessment complete — job 3 match score: 40%
+2026-03-31 20:44:14  INFO      jobbot.assessor:121  Assessing job 2: Senior Backend Engineer @ ImagineX Consulting
+2026-03-31 20:44:43  INFO      jobbot.assessor:150  Assessment complete — job 2 match score: 60%
+2026-03-31 20:44:43  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 20:45:13  INFO      jobbot.assessor:150  Assessment complete — job 1 match score: 60%
+2026-03-31 20:55:13  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 20:55:16  INFO      jobbot.composer:308  Composing resume for job 1: Software Developer @ Cisive
+2026-03-31 20:56:52  DEBUG     jobbot.composer:320  Compose LLM usage — input: 2604 tokens, output: 888 tokens
+2026-03-31 20:56:52  INFO      jobbot.composer:334  Resume saved to E:\Projects\job\resumes\Cisive_Software_Developer.docx
+2026-03-31 20:57:21  INFO      jobbot.assessor:150  Assessment complete — job 1 match score: 72%
+2026-03-31 20:58:50  INFO      jobbot.assessor:121  Assessing job 1: Software Developer @ Cisive
+2026-03-31 20:59:23  INFO      jobbot.assessor:150  Assessment complete — job 1 match score: 70%
+2026-03-31 20:59:46  WARNING   jobbot.form_filler:136  Cover letter generation failed: unhashable type: 'slice'
+2026-03-31 20:59:46  INFO      jobbot.form_filler:162  Form filler starting — job 1, platform: custom, url: https://www.indeed.com/rc/clk?jk=63d925de578e5b6c&bb=d1xj31QnK34Ve5VvKCmhBY9tloZuJdmQDRTaENnrd4SdwGbjQ3PXxcMRhcwTF4NFdc1RonaDDnBVXgdlxBDHuaIsMENQiV6KbXYgYEB-eTw-2vkQALhoYZMlqC9NigC5&xkcb=SoCw67M3ljIr1zyh5p0LbzkdCdPP&fccid=ceb736c32d3c5070&vjs=3
+2026-03-31 20:59:56  ERROR     jobbot.form_filler:204  Form filler error for job 1: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.indeed.com/rc/clk?jk=63d925de578e5b6c&bb=d1xj31QnK34Ve5VvKCmhBY9tloZuJdmQDRTaENnrd4SdwGbjQ3PXxcMRhcwTF4NFdc1RonaDDnBVXgdlxBDHuaIsMENQiV6KbXYgYEB-eTw-2vkQALhoYZMlqC9NigC5&xkcb=SoCw67M3ljIr1zyh5p0LbzkdCdPP&fccid=ceb736c32d3c5070&vjs=3", waiting until "networkidle"
+Traceback (most recent call last):
+  File "E:\Projects\job\agents\form_filler.py", line 174, in fill
+    await page.goto(application_url, wait_until="networkidle", timeout=45000)
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\async_api\_generated.py", line 9045, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dhanu\AppData\Roaming\Python\Python311\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.indeed.com/rc/clk?jk=63d925de578e5b6c&bb=d1xj31QnK34Ve5VvKCmhBY9tloZuJdmQDRTaENnrd4SdwGbjQ3PXxcMRhcwTF4NFdc1RonaDDnBVXgdlxBDHuaIsMENQiV6KbXYgYEB-eTw-2vkQALhoYZMlqC9NigC5&xkcb=SoCw67M3ljIr1zyh5p0LbzkdCdPP&fccid=ceb736c32d3c5070&vjs=3", waiting until "networkidle"
+
+2026-03-31 20:59:57  INFO      jobbot.form_filler:210  Browser closed — mark job as Applied in the dashboard if you submitted
+2026-03-31 21:00:10  INFO      jobbot.composer:308  Composing resume for job 2: Senior Backend Engineer @ ImagineX Consulting
+2026-03-31 21:01:00  ERROR     jobbot.assessor:97  LLM call error (attempt 1/3): Server disconnected without sending a response.
+2026-03-31 21:01:05  ERROR     jobbot.assessor:97  LLM call error (attempt 2/3): Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-04-01 10:37:44  INFO      jobbot.composer:308  Composing resume for job 72: Senior Software Engineer, AI Core @ Chainalysis
+2026-04-01 10:39:27  DEBUG     jobbot.composer:320  Compose LLM usage — input: 2941 tokens, output: 800 tokens
+2026-04-01 10:39:28  INFO      jobbot.composer:334  Resume saved to E:\Projects\job\resumes\Chainalysis_Senior_Software_Engineer__AI_Core.docx
+2026-04-01 10:39:54  INFO      jobbot.assessor:121  Assessing job 72: Senior Software Engineer, AI Core @ Chainalysis
+2026-04-01 10:40:34  INFO      jobbot.assessor:150  Assessment complete — job 72 match score: 60%
+2026-04-01 10:45:12  INFO      jobbot.assessor:121  Assessing job 64: Software Engineer @ UnitedHealth Group
+2026-04-01 10:45:47  INFO      jobbot.assessor:150  Assessment complete — job 64 match score: 60%
+2026-04-01 10:45:52  INFO      jobbot.composer:308  Composing resume for job 64: Software Engineer @ UnitedHealth Group
+2026-04-01 10:47:00  DEBUG     jobbot.composer:320  Compose LLM usage — input: 2932 tokens, output: 699 tokens
+2026-04-01 10:47:00  INFO      jobbot.composer:334  Resume saved to E:\Projects\job\resumes\UnitedHealth_Group_Software_Engineer.docx
+2026-04-02 13:24:56  INFO      jobbot.composer:317  Composing resume for job 68: Senior Software Quality Engineer @ Mastercard
+2026-04-02 13:24:58  ERROR     jobbot.assessor:107  LLM call error (attempt 1/3): model requires more system memory (10.3 GiB) than is available (9.7 GiB) (status code: 500)
+2026-04-02 13:25:02  ERROR     jobbot.assessor:107  LLM call error (attempt 2/3): model requires more system memory (10.3 GiB) than is available (9.7 GiB) (status code: 500)
+2026-04-02 13:25:06  ERROR     jobbot.assessor:107  LLM call error (attempt 3/3): model requires more system memory (10.3 GiB) than is available (10.0 GiB) (status code: 500)
